@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 .flex{
     display: flex;
 }
@@ -17,6 +21,8 @@ button{
     border-radius: 25px;
     padding: 10px 15px;
     border: none;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 button:hover{
@@ -27,6 +33,20 @@ button:hover{
 .button-white{
     background-color: white;
     color: black;
+}
+
+#button-black{
+    color: white;
+    background-color: rgb(35,39,42);
+}
+
+.button-purple{
+    color: white;
+    background-color: rgb(114,137,218);
+}
+
+.fa-arrow-down-long{
+    padding-right: 5px;
 }
 
 .border{ 
@@ -76,79 +96,137 @@ nav > a{
 
 #titolojumbo{
     font-size: 45px;
+    margin-bottom: 45px;
+}
+
+.description{
+    font-size: 19px;
+    margin-bottom: 10px;
 }
 
 .title>button{
-    margin: 0 15px;
+    margin: 20px 15px 0px 15px;
 }
 
 /*fine header jumbo*/
 /*inizio main*/
-.sezione:nth-of-type(even) {
-    background: rgb(211,211,211); /*provvisorio*/
-  }
 
 .sezione{ 
     height: 600px;
 }
 
 .img{
-    height: 80%;
-    width: 45%;
-    background-color: rgb(30,144,255); /*provvisorio*/
+    width: 35%;
 }
 
 .testo{
-    height: 80%;
-    width: 30%;
-    background-color: rgb(255,192,203); /*provvisorio*/
+    padding-right: 250px;
+    height: 60%;
+    width: 35%;
 }
 
-#section-special{ /*nome provvisorio*/
-    height: 800px;
+.titolo-main{
+    font-size: 50px;
+    font-weight: bold;
 }
 
-.testo-immagine{ /*nome provvisorio*/
+.testo-immagine{
     height: 90%;
     width: 75%;
-    background-color: rgb(34,139,34); /*provvisorio*/
+    text-align: center;
 }
+
+
+#section-last{
+    height: 800px;
+    margin-bottom: 100px;
+}
+
+#last-title{
+    margin-bottom: 15px;
+}
+
+#ready{
+    font-size: 20px;
+    font-weight: bold;
+    background-image: url(../img/stars.svg);
+    background-size: 355px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px 0;
+    margin-bottom: 45px;
+}
+
 /*fine main*/
 /* inizio footer*/
 .footer{
-    height: 600px;
-    background-color: rgb(35,39,42); /*provvisorio*/
+    height: 500px;
+    background-color: rgb(35,39,42);
 }
 
 .column{
     width: calc(75% / 6);
     height: 90%;
-    margin-bottom: 45px;
-    background-color: rgb(32,178,170); /*provvisorio*/
+    margin: 50px 0;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-#column-special{ /*nome provvisorio*/
-    background-color: rgb(240,128,128); /*provvisorio*/
+#column-big{
     width: calc(75% / 6 * 2);
+    color: white;
+    margin: 50px 0;
 }
 
+.bandieraimg{
+    height: 20px;
+    margin-right: 10px;
+}
+
+.lingua::after{
+    content: "\2B9F";
+}
+
+.select-language{
+    align-items: center;
+    padding: 10px;
+}
+
+.title-column-big{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: rgb(113,136,214);
+}
+
+.fa-brands{
+    font-size: 25px;
+    margin: 20px 5px;
+}
+
+.column > a{
+    margin: 15px 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#title-column{
+   color: rgb(113,136,214);
+}
 /* fine footer*/
 /* inizio footer bottom*/
 
 .footer-bottom{
-    height: 60px;
-    background-color: rgb(35,39,42); /*provvisorio*/
+    height: 80px;
+    background-color: rgb(35,39,42);
 }
 
-.footerbottom-container{ /*nome provvisorio*/
+.footerbottom-container{ 
     height: 50%;
     width: 75%;
-    background-color: rgb(127,255,212); /*provvisorio*/
     justify-content: space-between;
     align-items: center;
-}
-
-.footerbottom-container img , button{ /*nome provvisorio*/
-    background-color: rgb(255,182,193); /*provvisorio*/
+    padding-top: 30px;
+    border-top: solid 1px rgb(113,136,214);
 }
 /*fine footer bottom*/
